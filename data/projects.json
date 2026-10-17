@@ -1,0 +1,100 @@
+[
+  {
+    "id": "proj-1",
+    "name": "Next-Gen Autonomous Agent Engine",
+    "category": "Coding",
+    "description": "Developing scalable event-driven agent architectures with streaming SSE, state checkpoints, and tool permission guardrails.",
+    "instructions": "### STRICT CODING & ARCHITECTURE GUIDELINES:\n1. Always write strictly typed TypeScript (strictNullChecks enabled).\n2. All external side effects (file mutation, database writes, external API calls) must require an explicit user permission confirmation checkpoint.\n3. Use Server-Sent Events (SSE) for streaming completions with standard [DONE] termination.\n4. Keep all components modular with zero circular dependencies.",
+    "createdAt": "2026-09-13T17:06:55.027Z",
+    "updatedAt": "2026-09-16T15:06:55.028Z",
+    "files": [
+      {
+        "id": "f-kernel-engine",
+        "name": "cluster_kernel_engine.ts",
+        "size": 8940,
+        "type": "application/typescript",
+        "uploadedAt": "2026-09-17T09:30:00.000Z",
+        "content": "// NEXA Autonomous Distributed Kernel Engine v2.0\nexport class AutonomousKernelEngine {\n  private static instance: AutonomousKernelEngine | null = null;\n  public static getInstance(): AutonomousKernelEngine {\n    if (!AutonomousKernelEngine.instance) AutonomousKernelEngine.instance = new AutonomousKernelEngine();\n    return AutonomousKernelEngine.instance;\n  }\n}\nexport class DistributedRaftStateCoordinator {\n  constructor(public readonly nodeId: string) {}\n}\nexport class ASTCodeSynthesizer {\n  public synthesizeAST(code: string) { return { nodesCount: 120, isValid: true }; }\n}\nexport class VectorEmbeddingIndexManager {\n  private readonly dimensions = 1536;\n}\nexport class RingBufferTelemetryStreamer {}\nexport class ZeroLossFaultToleranceCircuitBreaker {}\n",
+        "wordCount": 890,
+        "tokenEstimate": 11200,
+        "enabled": true,
+        "category": "Core Microkernel & Raft Engine"
+      },
+      {
+        "id": "f-interface-registry",
+        "name": "interface_matrix_registry.ts",
+        "size": 7200,
+        "type": "application/typescript",
+        "uploadedAt": "2026-09-17T10:00:00.000Z",
+        "content": "// NEXA Domain Entity & Type Matrix Specification\nexport type ExecutionTier = 'TIER_1_MICRO' | 'TIER_2_STANDARD' | 'TIER_3_ENTERPRISE' | 'TIER_4_QUANTUM';\nexport interface NodeHardwareProfile {\n  cpuArchitecture: 'x86_64' | 'arm64' | 'riscv64';\n  coreCount: number;\n  totalRamGigabytes: number;\n}\nexport interface DatabaseTransactionDescriptor {\n  xid: string;\n  isolationLevel: 'SERIALIZABLE' | 'SNAPSHOT';\n}\nexport interface SecurityAccessControlList {\n  principalId: string;\n  grantedPermissions: string[];\n}\n",
+        "wordCount": 710,
+        "tokenEstimate": 9800,
+        "enabled": true,
+        "category": "Distributed Entity Schema Matrix"
+      },
+      {
+        "id": "f-cluster-config",
+        "name": "cluster_config_matrix.json",
+        "size": 6400,
+        "type": "application/json",
+        "uploadedAt": "2026-09-17T11:00:00.000Z",
+        "content": "{\n  \"clusterMeta\": { \"name\": \"NEXA Autonomous Mega-Cluster\", \"nodes\": 64 },\n  \"serviceLevelObjectives\": { \"availability\": 99.999, \"p99LatencyMs\": 12.5 }\n}\n",
+        "wordCount": 650,
+        "tokenEstimate": 8600,
+        "enabled": true,
+        "category": "High-Dimensional Cluster Configuration"
+      },
+      {
+        "id": "f-1",
+        "name": "agent_spec.ts",
+        "size": 4200,
+        "type": "application/typescript",
+        "uploadedAt": "2026-09-14T17:06:55.028Z",
+        "content": "// Agent Specification & Event Contracts\nexport interface AgentEventBus {\n  emit<T>(event: string, payload: T): void;\n  subscribe(event: string, handler: (payload: any) => void): () => void;\n}\n\nexport interface ToolCheckpoint {\n  id: string;\n  toolName: string;\n  actionSummary: string;\n  payload: Record<string, any>;\n  riskLevel: \"low\" | \"medium\" | \"high\" | \"critical\";\n  requiresConfirmation: boolean;\n}\n\nexport interface StreamingCompletionConfig {\n  streamChunkSize: number;\n  bufferTimeoutMs: number;\n  heartbeatIntervalMs: number;\n}\n",
+        "wordCount": 78,
+        "tokenEstimate": 120,
+        "enabled": true,
+        "category": "Code Architecture"
+      },
+      {
+        "id": "f-2",
+        "name": "security_policy.md",
+        "size": 2100,
+        "type": "text/markdown",
+        "uploadedAt": "2026-09-15T17:06:55.028Z",
+        "content": "# Project Security Policy & Guardrail Protocols\n\n## 1. Zero-Trust Tool Execution\nUnder no circumstances should autonomous execution modify production state, run unrestricted shell commands, or delete storage resources without user approval.\n\n## 2. Context Isolation\nData indexed within this project workspace belongs strictly to the project scope and must not leak into unrelated general chat threads.\n\n## 3. Input Sanitization\nAll inputs passed to external tool bridges must be stripped of prompt-injection vectors and validated against schema constraints.\n",
+        "wordCount": 74,
+        "tokenEstimate": 95,
+        "enabled": true,
+        "category": "Security Policy"
+      }
+    ],
+    "knowledgeSnippet": "Agent workflows require proactive user consent for any external state alteration.",
+    "guidelines": "Zero unhandled promise rejections, type safety, modular architecture."
+  },
+  {
+    "id": "proj-2",
+    "name": "Quantum Computing Hardware Review 2026",
+    "category": "Research",
+    "description": "Comparative study of superconducting qubits, topological qubits, and neutral atom quantum computing systems.",
+    "instructions": "### EMPIRICAL RESEARCH GUIDELINES:\n1. Prioritize peer-reviewed benchmarks from 2024-2026.\n2. Clearly contrast physical vs logical qubit overhead ratios.\n3. Compare gate fidelities (1Q & 2Q), coherence times (T1, T2*), and laser addressing arrays.\n4. Include quantitative tables in all comparative outputs.",
+    "createdAt": "2026-09-09T17:06:55.028Z",
+    "updatedAt": "2026-09-16T05:06:55.028Z",
+    "files": [
+      {
+        "id": "f-3",
+        "name": "neutral_atoms_qec.md",
+        "size": 3800,
+        "type": "text/markdown",
+        "uploadedAt": "2026-09-11T17:06:55.028Z",
+        "content": "# Neutral Atom Qubit Benchmarks (2025-2026 Review)\n\n## Key Findings:\n- Neutral atom arrays using optical tweezers demonstrate dynamic reconfigurability during runtime.\n- Two-qubit entangling Rydberg gate fidelities have exceeded 99.5% in Rubidium (87Rb) and Strontium (88Sr) architectures.\n- Logical qubit color codes and surface codes show an 8x reduction in physical-to-logical qubit overhead compared to fixed superconducting transmon geometries.\n- T1 coherence times exceed several seconds, with T2* dephasing times preserved via dynamical decoupling sequences.\n",
+        "wordCount": 82,
+        "tokenEstimate": 110,
+        "enabled": true,
+        "category": "Empirical Data"
+      }
+    ],
+    "knowledgeSnippet": "Neutral atom arrays demonstrate high spatial addressability and two-qubit gate fidelities exceeding 99.5%.",
+    "guidelines": "Prioritize empirical gate fidelities and physical-to-logical qubit overhead."
+  }
+]
